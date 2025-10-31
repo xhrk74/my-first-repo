@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="sonnyangel.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #fff0f3;
+        }
+
+        * {
+                font-family: "Fraunces", serif;
+                font-optical-sizing: auto;
+                font-weight: <20px>;
+                font-style: normal;
+                font-variation-settings:
+                "SOFT" 0,
+                "WONK" 0;
+            }
+
+        .about {
+            display:grid;
+            grid-template-areas: 
+            "history babysonny";
+            grid-template-columns: 4fr 1fr;
+            gap: 5px;
+            padding: 5px;
+        }
+        
+        .history {
+            padding:30px;
+        }
+        .history h1{
+            color:#ff5d8f;
+            text-align:center;
+            font-size: 50px;
+            font-style: italic;
+            font-weight: <55px>;
+        }
+
+        .history p{
+            text-align:center;
+            margin: 40px;
+            font-size: 20px;
+            color: #fb6f92;
+            font-weight: <30px>;
+        }
+        .babysonny img{
+            padding: 10px;
+            margin-top: 40px;
+            border-radius: 80px;
+            border: 10px solid #fb6f92;
+        }
+
+            /* TODO: COUNTERS BROKEN */
+
+    :root {
+        --body-padding: 2rem;
+        --card-width: 400px;
+    }
+
+    .slider {
+        display: grid;
+        gap: 2rem;
+        grid-auto-flow: column;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        scrollbar-color: #fb6f92 #ffe6ec;
+
+        /* Important: prevent sticky effects when scrolling vertically */
+        position: static;
+        overflow-y: visible;
+    }
+
+    .slider img {
+    width: 100%;
+    border-radius: 50px;
+    }
+
+    /* just in case: disable sticky behavior globally for children */
+    .slider * {
+    position: static !important;
+    }
+
+    .craze h1{
+            
+            color:#ff5d8f;
+            padding:10px;
+            text-align:center;
+            font-size: 50px;
+            font-style: italic;
+            font-weight: <55px>;
+        }
+
+    .craze{
+        background-color:#ffecee;
+        max-width: auto;
+        margin: 0 auto;
+        border-radius: 80px;
+        border: 10px solid #fb6f92;
+       
+    }
+
+    .archives a{
+        display: block;
+        text-decoration: underline;
+        color:#fb6f92;
+        font-size:20px;
+        font-weight: <40px>;
+        margin-bottom: 10px;
+        text-align:center;
+    }
+
+    .archives p{
+            margin: 25px;
+            font-size: 15px;
+            color: #fb6f92;
+     
+            
+    }
+
+    .archives {
+        width: var(--card-width);
+        position: relative;
+        overflow: hidden;
+        scroll-snap-align: center;
+        container-type: scroll-state;
+
+        /* prevent internal stickiness */
+        position: static;
+
+        img {
+            aspect-ratio: 4/4;
+            object-fit: cover;
+            object-position: bottom;
+            }
+
+        }
+
+
+   
+    h2 {
+    line-height: 2;
+    }
+
+    
+    .buynow {
+        text-align: center;
+        color: #fb6f92;
+        padding:50px;
+        font-weight: <30px>;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="navbox">
+        <div class = "header">
+            <center><img src="sonnyangel.png" alt="Sonny Angel" height="90px"></center>
+        </div>
+
+        <div class="nav">
+            <a href="sonnyangel.html"><h4>Home</h4></a>
+        </div>
+        
+        <div class="nav">
+            <a href="regular.html"><h4>Regular</h4></a>
+        </div>
+
+        <div class="nav">
+            <a href="hippers.html"><h4>Hippers</h4></a>
+        </div>
+
+        <div class="nav">
+            <a href="limited.html"><h4>Limited</h4></a>
+        </div>
+
+        <div class="nav">
+            <a href="artistcollection.html"><h4>Artist Collection</h4></a>
+        </div>
+
+        <div class="nav">
+            <a href="about.html"><h4>About</h4></a>
+        </div>
+    </div>
+
+    <div class = "about">
+        <div class="history">
+            <h1>He may bring you happiness!</h1>
+            <p>Sonny Angel is the creation of Toru Soeya, a Japanese designer and CEO of the goods manufacturer Dreams. Soeya seems to have predicted today’s rise in ‘inner child consumerism’. Despite its appearance and likely appeal to younger audiences, Soeya designed Sonny Angel with women over 25 in mind. His concept was a ‘little boyfriend’ who would comfort women facing difficult times and provide a sense of healing to combat stress and worry. In fact, Sonny’s design is part of a long and slightly mysterious art historical journey. </p>
+        </div>
+        <div class="babysonny">
+            <img src="babysonny.webp" alt="babysonny" height="400px">
+        </div>
+        
+        
+    </div>
+
+
+    <div class="craze">
+        <h1>Sonny Angel Digest</h1>
+        <ul class="slider">
+            <li class="archives">
+              <img src="sonnynews1.jpg" alt="This tiny doll is making everyone so happy">
+              <a href="https://www.vox.com/culture/357364/sonny-angel-hippers-shortage-explained"><h3>This Tiny Doll is Making Everyone So Happy by Alex Abad-Santos</h3></a>
+                <p class="desc">
+                    Sonny Angels, from TikTok trend to SNL sketch fodder, explained.<br><br>
+    
+                </p>
+            </li>
+            <li class="archives">
+                <img src="sonnynews3.jpg" alt="How Sonny Angel Took the Collecting World by Storm">
+                <a href="https://www.goodhousekeeping.com/childrens-products/toy-reviews/a63106071/what-are-sonny-angels/"><h3>How Sonny Angel Took the Collecting World by Storm by Marisa LaScala</h3></a>
+                
+                <p class="desc">
+                    There's a good reason this smiling, naked cherub "boyfriend" is all over your timeline. <br><br>
+
+                </p>
+              </li>
+            <li class="archives">
+              <img src="sonnyangel2.jpg" alt="The Rise of Sonny Angels">
+                <a href="https://www.alignmaguo.com/spring-2024/1tyer69n85h8czq565fxiqe894da9s"><h3>The Rise of Sonny Angels and Our Obsession with Collectibles by Avery Wilson</h3></a>
+                <p class="desc">
+                  How really did Sonny Angels rise into popularity? <br><br>
+                </p>
+            </li>
+            <li class="archives">
+              <img src="sonnyangel4.jpg" alt="Sonny Angel, he WILL bring you happiness">
+              <a href="https://resources.audiense.com/en/blog/how-sonny-angels-become-so-popular"><h3>Sonny Angel, he WILL bring you Happiness by Jackie Davies</h3></a>
+              <p class="desc">
+                This little collectable toy might not sound like much, but to many people across the globe, he is everything. <br><br>
+
+              </p>
+            </li>
+            
+          </ul>
+          
+    </div>
+
+    <div class="buynow">
+        <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⠂⠤⢀⠄⢀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ <br>
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡠⠀⠀⣠⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠑⢄⡈⠐⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀<br>
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⢚⣀⣤⠐⠀⠀⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢄⣤⣘⢦⢀⠈⠢⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀<br>
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠜⠀⢄⣼⢃⣧⣿⡿⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠀⠀⠀⠀⠀⠀⠀⠀⠠⠘⣿⣧⣧⣣⣀⡀⠘⡀⠀⠀⠀⠀⠀⠀⠀⠀<br>
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠂⠄⣈⠾⠉⠸⠟⠛⠀⠀⠀⠀⠀⠀⠐⣠⣾⣿⢿⡿⣿⣦⡀⠀⠀⠀⠀⠀⠀⠀⠙⠋⠁⢙⣅⠄⠈⠄⠀⠀⠀⠀⠀⠀⠀<br>
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠦⢡⢣⠮⢁⠈⡀⠄⠐⠁⠀⠀⠀⠀⠀⠐⠸⣿⣿⣮⣷⣿⡿⠅⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠠⢈⣎⠀⡌⡄⠀⠀⠀⠀⠀⠀<br>
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡘⢄⠇⡞⣀⠆⡐⠠⠀⠂⠄⠠⠀⠀⠀⠀⠀⠀⠈⠛⠛⠟⠋⠀⠀⠀⠀⠀⠀⠀⠈⠀⠀⠁⠠⠀⢠⠘⡆⠁⢱⠀⠀⠀⠀⠀⠀<br>
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡏⠰⢸⡆⠄⡂⠰⢀⠁⠂⡀⢀⠀⠄⢀⠂⠄⠠⠐⣀⣠⣀⣄⢀⡀⠄⠠⠀⠄⠐⢀⠠⠀⠂⠠⠐⠀⡒⣱⡄⢘⡄⠀⠀⠀⠀⠀<br>
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⢀⢇⡆⠇⡜⠠⠑⡀⢂⠁⣐⠠⠌⠐⠂⠄⢈⠐⠀⢀⠀⡀⠀⠄⠀⠈⡀⢁⠢⠌⢠⡀⠂⠄⢁⠀⢂⠱⠘⡠⠄⢡⠀⠀⠀⠀⠀<br>
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢏⢸⢠⡏⡖⢨⠐⠡⠐⡠⠖⡀⠂⠌⡐⠈⠄⠂⠄⡈⠄⢂⠠⢁⠈⠠⠁⡐⢀⠂⠌⠄⡘⠰⢌⠄⠨⠠⠸⢸⣤⠘⠘⡄⠀⠀⠀⠀<br>
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⠠⡆⠰⣏⡔⢃⠌⣡⡭⠘⠤⣁⢸⡀⢌⠈⡂⢁⠂⠄⡈⠄⠂⠄⡈⢄⢁⠂⠌⢂⢬⡔⣀⠣⠌⢣⡡⢈⡁⢆⣿⠔⠁⢡⠀⠀⠀⠀<br>
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠧⢁⢁⢼⣧⢍⡒⠌⡤⠣⢍⠒⡘⠋⡍⢂⠰⢀⠂⠌⡐⠠⢈⠐⠠⠂⢄⠂⠜⠠⢂⠄⡛⠣⡘⢄⠣⠰⠅⣨⢸⣿⠂⠀⡂⠆⠀⠀⠀<br>
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡌⠄⡹⠰⣿⣟⡦⠱⢘⠧⡉⢆⠡⢁⢃⡐⠌⠤⠁⠌⡐⠠⢁⠂⠡⠌⡐⠈⡌⢨⠐⡡⢊⠄⡑⠨⢄⠃⡍⡗⡠⣿⣿⡟⠀⢁⠘⡄⠀⠀<br>
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠰⡈⠅⠇⢇⣿⣿⡼⡱⢸⣇⠱⣨⡶⣃⡦⢼⣾⣤⣋⠰⢀⠃⠰⡈⠔⡐⠨⢡⢸⣰⠷⣴⣷⣝⣾⣷⠈⡔⢨⡇⢲⣿⣿⢣⠇⠀⢚⠰⡀⠀<br>
+            ⠀⠀⠀⠀⠀⠀⠀⠀⢀⢣⠉⢼⢀⡸⣟⣿⡧⢇⠹⣮⠐⠉⠾⠉⢰⣿⣿⠟⣿⡽⢀⠘⠠⠐⠂⠄⢃⢲⠟⠁⣾⣿⣏⣽⣧⠅⡐⠌⢢⢃⣳⡿⢯⣛⡼⠘⢀⠇⢧⠀<br>
+            ⠀⠀⠀⠀⠀⠀⠀⠀⣌⠧⢎⡄⠈⣷⢻⡼⣿⢌⠸⣣⠌⡅⠈⢆⠸⣿⣿⣿⣿⠛⢀⠊⠀⠁⠀⠈⠄⠂⢄⠀⢿⣿⣿⣿⠏⠁⠄⡩⢸⢠⡿⣽⣋⠞⡥⡄⢊⡜⣩⡆<br>
+            ⠀⠀⠀⠀⠀⠀⠀⠀⣯⢟⡪⣧⠐⡏⢧⡹⢞⣏⠆⣗⠬⠐⣀⠀⠀⠈⠉⠉⠀⠐⢀⠠⠀⠂⠀⢀⠠⠁⠠⠈⠀⠈⠙⠀⢀⢈⠐⠄⣻⢲⡟⣦⢋⡝⡲⢠⢡⢎⡵⡂<br>
+            ⠀⠀⠀⠀⠀⠀⠀⠀⣯⣧⢫⢼⠰⢩⠖⣩⢏⠾⣡⢾⠬⡑⠠⠁⠌⡀⠌⠀⢂⠈⡀⠄⡐⢀⠒⠠⠐⡀⢂⠁⠄⠈⡀⠂⠄⢊⠰⡘⣆⡿⢜⡢⢍⠲⡱⢀⡘⣎⠶⡇<br>
+            ⠀⠀⠀⠀⠀⠀⠀⠀⢳⣞⡏⢮⠐⣃⠚⡔⣊⠳⡝⢎⡖⡩⢂⠍⡂⠔⡈⠔⠠⠡⠐⣈⠐⠠⠈⠤⢁⠰⠀⠌⡐⠡⢀⠍⡘⠤⠓⣬⢽⢎⡳⡘⡌⢣⡑⠢⡜⣼⣹⠇<br>
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠈⣾⡝⢻⡄⣥⠉⠒⢡⠋⡆⠈⢳⡅⠋⡔⢡⠂⠐⠈⡄⠁⠑⢢⣬⣤⣭⣴⣤⠓⠚⠀⠂⢡⠂⡜⢨⡜⢱⡎⠀⣯⡔⢱⠈⣥⠘⣴⠙⣶⡟⠀<br>
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠛⡽⣎⢧⢅⣉⠚⣌⢺⠁⠀⠈⠻⣜⠔⡣⢌⠢⣁⠂⡡⠂⠌⠠⠐⠠⢀⠄⡐⠠⠌⡘⢠⠊⣅⠣⡴⠋⠀⠀⠳⣡⠃⢎⠤⡓⡴⣛⡖⠁⠀<br>
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⣚⠦⣄⠣⢬⠃⠀⠀⠀⠀⠈⠚⠕⣎⣱⢄⠣⣄⠱⡈⠄⡁⠒⡀⠒⡌⢡⠚⡌⣥⡳⠞⠉⠀⠀⠀⠀⠀⠱⣍⡲⡸⣜⡳⠋⠀⠀⠀<br>
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠚⠋⠁⠀⠀⠀⠀⢀⠤⡖⠾⢿⣷⣮⣷⣎⣵⣊⡴⢁⠎⣔⣱⣬⣧⣿⣾⠿⡻⢝⡒⠦⣀⠀⠀⠀⠀⠀⠁⠉⠁⠀⠀⠀⠀⠀<br>
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠎⣊⠱⢈⠓⢌⠰⡉⠍⡛⢛⠻⠿⠿⠿⡛⠟⠫⠙⠤⢁⢊⠡⢂⠘⠤⣁⠓⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀<br>
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡰⠑⡌⠠⢂⠡⣈⠂⢂⠐⠠⠈⠄⠒⠈⠐⡀⠐⠈⡁⠊⢀⡐⠠⢈⠄⢊⠐⡀⠒⡈⢄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀<br>
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡰⢡⠉⠄⠱⡈⡔⠠⠌⢄⠈⠄⠡⠈⠀⠄⠁⠀⠄⠂⠀⡁⠠⢀⠂⠄⠨⡀⠆⡄⠡⠐⡈⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀<br>
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡑⢂⠌⡘⢠⠱⢌⠡⠌⢠⠈⠠⢁⠠⢁⠀⡁⠠⢀⠈⢀⠐⢀⠂⡈⠄⢡⢐⡡⢀⠁⢂⠐⡈⡄⠀⠀⠀⠀⠀⠀⠀⠀<br>
+            ⢀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠃⡐⢀⠂⠐⣠⢋⢆⠣⠘⢠⠈⡐⠀⠂⢀⠀⠀⠄⠀⠐⠀⡀⠂⠐⠠⠈⠄⡂⡇⡄⠈⠄⠂⡀⠌⢆⠀⠀⠀⠀⠀⠀⠀</p>
+    </div>
+
+    <div class="footer">
+        <div class="navigate" >
+        <h3>NAVIGATE</h3>
+            <a href="sonnyangel.html">Home</a>
+            <a href="regular.html">Regular</a>
+            <a href="hippers.html">Hippers</a>
+            <a href="limited.html">Limited</a>
+            <a href="artistcollection.html">Artist Collection</a>
+            <a href="about.html">About</a>
+        </div> 
+
+        <div class="email" >
+            <h3>CONNECT WITH US!</h3>
+            <form>
+                <input type="email" placeholder="Your Email Adress" required>
+                <br></br>
+
+                <button type="submit">SUBSCRIBE NOW</button>
+            </form>
+        </div> 
+
+        <div class="socials">
+            <h3>SOCIALS</h3>
+                <a href="https://www.facebook.com/SonnyAngel.Official.Philippines/">Facebook</a>
+                <a href="https://twitter.com/search?q=%23Sonnyangel&src=hashtag_click&f=user">Twitter</a>
+                <a href="https://www.instagram.com/sonnyangel_ph?fbclid=IwY2xjawNOa7BleHRuA2FlbQIxMABicmlkETFETXN5RXJlYmRRRmZNTXNOAR6HiX-zu2n-dPZxVdrFCDFa1m42zIB7Rk7ereW7I4VVnjAXRR-c_51oS96jRw_aem_cT2M3Hkp_5Q25SpNINEzqQ">Instagram</a>
+        </div>
+</body>
+</html>

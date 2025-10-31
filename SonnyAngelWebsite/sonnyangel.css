@@ -1,0 +1,360 @@
+/*svg files*/
+/*responsive css to diff devices*/
+
+*{
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: <20px>;
+    font-style: normal;
+    font-variation-settings:
+      "SOFT" 0,
+      "WONK" 0;
+  }
+
+.nav h4{
+    color: #fffffc;
+}
+
+
+.navbox {
+    position: sticky;
+      top: 0;
+      overflow: hidden;
+      background-color: #fffffc;
+
+}
+
+.navbox {
+    display: grid;
+    padding: 5px;
+    margin: 0px;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-areas: 
+    "header header header header header header";
+}
+
+.header {
+    padding: 20px;
+    grid-area: header;
+    height: 80px;
+}
+
+.head {
+    padding: 20px;
+    grid-area: header;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.column {
+    padding: 5px;
+}
+
+
+.nav {
+    background-color: #ff99ac;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav:hover {
+    background-color: #ff5d8f;
+    font-size: 18px;
+}
+
+.nav h4:hover{
+    color: #ffffff;
+}
+
+.content img {
+    width: 100%;
+    height: auto;
+}
+
+.nav a {
+   	padding:8px 8px 8px 32px;
+   	text-decoration:none;
+   	color: black;
+   	display:block;
+   	transition:0.3s;
+}
+
+.nav a:hover {
+   	color:white;
+}
+
+.sonnyangelseries {
+    background-color: #f4a5aa;
+    display: grid;
+    padding: 5px;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+.sonnyangelseries img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.series a {
+    color: #ff99ac;
+    font-size: smaller;
+}
+
+.series {
+    background-color: #fffffc;
+    border-radius: 25px;
+}
+
+.series h3 {
+    padding: 10px;
+    color:#ff99ac;
+}
+
+.series p {
+    background-color: #fffffc;
+    color:#ff5d8f;
+    padding: 20px;
+    display: none;
+}
+
+.series h3:hover + p{
+    display: block;
+}
+
+
+.footer {
+        margin-top: 30 px;
+        width: auto;
+        height:auto;
+        background-color: #ff99ac;
+        display: flex;
+        padding: 50px 10%;
+       
+        
+}
+
+.footer div{
+    text-align: center;
+}
+
+.email{
+    flex-grow:2;
+}
+
+.footer div h3{
+    color: #f9f9f7;
+    font-weight:300px;
+    letter-spacing:2px;
+}
+
+.navigate a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.socials a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+}
+
+form input{
+    width:400px;
+    height:40px;
+    border-radius: 4px;
+    text-align:center;
+    margin-top:20px;
+    margin-bottom:10px; /*space lang*/
+    outline:none;
+    border:none;
+}
+
+form button{
+    background:transparent;
+    border:2px solid whitesmoke;
+    color:white;
+    border-radius: 30px ;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow:0 8px 16px 0 pink;  
+
+}
+
+.carouselone  h1{       
+    color: #ff99ac;
+    padding:10px;
+    text-align:center;
+    font-size: 50px;
+    font-style: italic;
+    font-weight: <55px>;
+}
+/* TODO: COUNTERS BROKEN */
+.ogslider {
+    display: grid;
+    gap: .75rem;
+    grid-auto-flow: column;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-color: pink #ffe6ec;
+  
+    /* Important: prevent sticky effects when scrolling vertically */
+    position: static;
+    overflow-y: visible;
+  }
+  
+  
+.ogslider img {
+          width: 100%;
+}
+  
+.ogslider * {
+          position: static !important;
+ }
+
+:root {
+  --body-padding: 2rem;
+  --card-width: 400px;
+}
+
+
+.carouselone button{
+    margin-bottom:30px;
+    background:transparent;
+    border:2px solid whitesmoke;
+    color:#ff99ac;
+    border-radius: 30px ;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow:0 8px 16px 0 pink;
+}
+
+.carousel button{
+   margin-bottom:30px;
+    background:transparent;
+    border:2px solid #ff99ac;
+    color: #ff99ac;
+    border-radius: 30px ;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow:0 8px 16px 0 pink;
+}
+
+
+/*for collabs*/
+
+:root {
+    --body-padding: 2rem;
+    --card-width: 400px;
+  }
+.ogslider1 {
+  display: grid;
+  gap: 2rem;
+  grid-auto-flow: column;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-color: pink #ffe6ec;
+
+/* Important: prevent sticky effects when scrolling vertically */
+  position: static;
+  overflow-y: visible;
+}
+
+
+ .ogslider1 img {
+        width: 100%;
+       
+ }
+
+.ogslider1 * {
+        position: static !important;
+ }
+
+.carousel h1{       
+        color: #ff99ac;
+        padding:10px;
+        text-align:center;
+        font-size: 50px;
+        font-style: italic;
+        font-weight: <55px>;
+ }
+
+  .carousel a{  
+        margin-bottom:0px;     
+        color: #ff99ac;
+        padding:10px;
+        text-align:center;
+        font-size: 50px;
+        font-style: italic;
+        font-weight: <55px>;
+ }
+
+ .carousel {
+    max-width: auto;
+    margin: 40px;
+    border: 10px solid pink;
+
+  }
+
+.collabseries h3{
+        display: block;
+        text-decoration: underline;
+        color: #ff99ac;
+        font-size:20px;
+        font-weight: <40px>;
+        margin-bottom: 10px;
+        text-align:center;
+}
+
+.collabseries p{
+        text-align:center;
+        margin-top: 25px;
+        font-size: 15px;
+        color:  #ff99ac;
+ }
+
+
+ .collabseries {
+    width: var(--card-width);
+    position: relative;
+    overflow: hidden;
+    scroll-snap-align: center;
+    container-type: scroll-state;
+
+    /* prevent internal stickiness */
+    position: static;
+
+    img {
+        aspect-ratio: 4/4;
+        object-fit: cover;
+        object-position: bottom;
+    }
+
+}
+
+h2 {
+        line-height: 2;
+     }
+    
+
+hr {
+	border:2px; 
+	border-style: solid;
+	border-color:white;
+}
+
+#buy {
+    background-color: white;
+    padding: 20px;
+}
